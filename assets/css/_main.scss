@@ -94,6 +94,64 @@ nav {
   color: #2a120b;
 }
 
+// About
+
+.about {
+  height: 120vh;
+  clip-path: polygon(0 21%, 100% 0, 100% 79%, 0% 100%);
+  background: linear-gradient(
+    302deg,
+    #00ffbd,
+    #00c5ff,
+    #b2eafb,
+    #95a8ae,
+    #49a7c5,
+    #26c82c,
+    #93ea96,
+    #87bb1f,
+    #751fbb,
+    #8b8392,
+    #d29370
+  );
+  background-size: 2200% 2200%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 91%;
+  }
+  50% {
+    background-position: 100% 10%;
+  }
+  100% {
+    background-position: 0% 91%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 91%;
+  }
+  50% {
+    background-position: 100% 10%;
+  }
+  100% {
+    background-position: 0% 91%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 91%;
+  }
+  50% {
+    background-position: 100% 10%;
+  }
+  100% {
+    background-position: 0% 91%;
+  }
+}
 // Media Query
 
 @media all and(max-width: 768px) {
