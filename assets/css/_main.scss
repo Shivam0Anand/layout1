@@ -9,7 +9,7 @@ header {
 
 nav {
   height: 10vh;
-  background: #00000048;
+  background: #000000;
 }
 
 .nav-links {
@@ -29,7 +29,7 @@ nav {
   border-radius: 5px;
 }
 .nav-links li a {
-  color: rgba(206, 206, 206, 0.623);
+  color: rgba(206, 206, 206, 0.918);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -72,7 +72,8 @@ nav {
 .work-one {
   padding: 4rem;
   margin-top: 6rem;
-  box-shadow: 1px 1px 100px #2a120b;
+  box-shadow: 1px 1px 10px #2a120b;
+  border-radius: 5px;
   // margin-bottom: 5rem;
 }
 .work-one i {
@@ -83,7 +84,7 @@ nav {
   padding: 1.4rem;
   border: 1px solid #000;
   box-shadow: 2px 2px 20px #aaa;
-  border-radius: 70%;
+  border-radius: 50%;
 }
 .work-one h3 {
   color: #2a120bc4;
@@ -96,6 +97,11 @@ nav {
 // Media Query
 
 @media all and(max-width: 768px) {
+  body {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+  }
   header {
     width: 100%;
     margin: 0;
@@ -124,12 +130,12 @@ nav {
 
   .nav-links {
     position: fixed;
-    background: #5b78c771;
+    background: #fefeff;
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 50% -10%);
-    -webkit-clip-path: circle(100px at 50% -10%);
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
@@ -164,6 +170,8 @@ nav {
     text-align: center;
   }
 
+  // main
+
   // Work
   .work {
     height: auto;
@@ -171,5 +179,20 @@ nav {
     margin: 0;
     padding: 10px;
     clip-path: none;
+    grid-gap: 0;
+  }
+  .work-one {
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+    margin-top: 0;
+  }
+  .work-one h3,
+  .work-one i {
+    margin-bottom: 1rem;
+  }
+  .icon-box {
+    border: none;
+    box-shadow: none;
   }
 }

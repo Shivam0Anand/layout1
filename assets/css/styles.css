@@ -399,7 +399,7 @@ header {
 
 nav {
   height: 10vh;
-  background: #00000048;
+  background: #000000;
 }
 
 .nav-links {
@@ -427,7 +427,7 @@ nav {
 }
 
 .nav-links li a {
-  color: rgba(206, 206, 206, 0.623);
+  color: rgba(206, 206, 206, 0.918);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -467,8 +467,9 @@ nav {
 .work-one {
   padding: 4rem;
   margin-top: 6rem;
-  -webkit-box-shadow: 1px 1px 100px #2a120b;
-          box-shadow: 1px 1px 100px #2a120b;
+  -webkit-box-shadow: 1px 1px 10px #2a120b;
+          box-shadow: 1px 1px 10px #2a120b;
+  border-radius: 5px;
 }
 
 .work-one i {
@@ -481,7 +482,7 @@ nav {
   border: 1px solid #000;
   -webkit-box-shadow: 2px 2px 20px #aaa;
           box-shadow: 2px 2px 20px #aaa;
-  border-radius: 70%;
+  border-radius: 50%;
 }
 
 .work-one h3 {
@@ -494,6 +495,11 @@ nav {
 }
 
 @media all and (max-width: 768px) {
+  body {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+  }
   header {
     width: 100%;
     margin: 0;
@@ -520,15 +526,15 @@ nav {
   }
   .nav-links {
     position: fixed;
-    background: #5b78c771;
+    background: #fefeff;
     height: 100vh;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    clip-path: circle(100px at 50% -10%);
-    -webkit-clip-path: circle(100px at 50% -10%);
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     pointer-events: none;
@@ -570,6 +576,23 @@ nav {
     padding: 10px;
     -webkit-clip-path: none;
             clip-path: none;
+    grid-gap: 0;
+  }
+  .work-one {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 1px solid #000;
+    margin-top: 0;
+  }
+  .work-one h3,
+  .work-one i {
+    margin-bottom: 1rem;
+  }
+  .icon-box {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
