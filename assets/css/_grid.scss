@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
+  // margin-top: 3rem;
 }
 .grid-col4 {
   display: grid;
@@ -41,6 +41,6 @@
   }
   .grid-col3 {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
 }

@@ -175,7 +175,6 @@ a {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
 }
 
 .grid-col4 {
@@ -210,8 +209,8 @@ a {
   .grid-col3 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -392,8 +391,7 @@ p {
 
 header {
   height: 100vh;
-  background: url(../images/header.jpg), -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0.452)));
-  background: url(../images/header.jpg), linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.452));
+  background-image: url(../images/header.jpg);
   background-size: initial;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 77%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 77%);
@@ -435,11 +433,73 @@ nav {
 }
 
 .hero {
-  margin-top: 5rem;
+  font-family: "Mansalva", cursive;
+  margin-top: 7rem;
   color: #fff;
 }
 
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hor-line {
+  width: 50px;
+  background: #fff;
+  height: 3px;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.hero h3 {
+  margin-top: 2rem;
+}
+
+.work {
+  height: 100vh;
+  -webkit-clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+  padding: 3rem 10rem;
+  margin-bottom: 0;
+  background: #d7f0f8;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.work-one {
+  padding: 4rem;
+  margin-top: 6rem;
+  -webkit-box-shadow: 1px 1px 100px #2a120b;
+          box-shadow: 1px 1px 100px #2a120b;
+}
+
+.work-one i {
+  font-size: 3rem;
+  color: #ad00fd;
+}
+
+.icon-box {
+  padding: 1.4rem;
+  border: 1px solid #000;
+  -webkit-box-shadow: 2px 2px 20px #aaa;
+          box-shadow: 2px 2px 20px #aaa;
+  border-radius: 70%;
+}
+
+.work-one h3 {
+  color: #2a120bc4;
+}
+
+.work-one p {
+  font-size: 0.9rem;
+  color: #2a120b;
+}
+
 @media all and (max-width: 768px) {
+  header {
+    width: 100%;
+    margin: 0;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
   .line {
     width: 30px;
     height: 3px;
@@ -467,8 +527,8 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 50% -10%);
+    -webkit-clip-path: circle(100px at 50% -10%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     pointer-events: none;
@@ -498,6 +558,18 @@ nav {
   }
   li.fade {
     opacity: 1;
+  }
+  .hero {
+    width: 100%;
+    text-align: center;
+  }
+  .work {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    -webkit-clip-path: none;
+            clip-path: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
