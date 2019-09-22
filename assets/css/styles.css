@@ -518,18 +518,19 @@ nav {
     position: relative;
   }
   .hamburger {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     right: 5%;
-    top: 50%;
+    top: 5%;
+    background: #000;
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
     z-index: 2;
   }
   .nav-links {
     position: fixed;
-    background: #fefeff;
-    height: 100vh;
+    background: #ffffff;
+    height: 40vh;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -547,10 +548,13 @@ nav {
     pointer-events: all;
   }
   .nav-links li {
-    opacity: 0;
+    opacity: 1;
+    background: #0a0a0a;
+    z-index: 3;
   }
   .nav-links li a {
     font-size: 1rem;
+    color: #ffffff;
   }
   .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
@@ -570,6 +574,7 @@ nav {
   .hero {
     width: 100%;
     text-align: center;
+    margin-top: 12rem;
   }
   .work {
     height: auto;
