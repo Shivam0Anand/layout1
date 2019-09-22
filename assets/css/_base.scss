@@ -1,0 +1,124 @@
+// Base styles
+html {
+  font-size: 16px;
+}
+body {
+  line-height: 1.5;
+  font-family: Source Sans Pro, sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+}
+
+// Scrollbar
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 2, 141, 0.664);
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 2, 141, 0.664);
+}
+
+// Alinging text
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+// Centering child
+.center-child {
+  display: grid;
+  place-items: center;
+}
+
+// Flex properties
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align-start {
+  display: flex;
+  align-items: flex-start;
+}
+.bold {
+  font-weight: 700;
+}
+
+// Responsive Image
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+// btn animation
+.btn-animation {
+  animation: btnZoom 2s ease-in-out;
+}
+
+@keyframes btnZoom {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
