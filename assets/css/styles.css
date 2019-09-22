@@ -495,9 +495,11 @@ nav {
 }
 
 @media all and (max-width: 768px) {
+  html,
   body {
+    overflow-x: hidden;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
   }
   header {
