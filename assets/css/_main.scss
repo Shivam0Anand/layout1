@@ -1,6 +1,12 @@
 header {
   height: 100vh;
-  background-image: url(../images/header.jpg);
+  background: 
+  /* top, transparent red, faked with gradient */ linear-gradient(
+      to bottom,
+      rgba(0, 174, 255, 0.411),
+      rgba(20, 19, 19, 0.45)
+    ),
+    /* bottom, image */ url(../images/header.jpg);
   background-size: initial;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 77%);
 }
@@ -9,7 +15,7 @@ header {
 
 nav {
   height: 10vh;
-  background: #000000;
+  background: transparent;
 }
 
 .nav-links {
@@ -180,17 +186,17 @@ nav {
   }
 
   .hamburger {
-    position: fixed;
+    position: absolute;
     cursor: pointer;
     right: 5%;
-    top: 5%;
+    top: 50%;
     background: #000;
     transform: translate(-5%, -50%);
     z-index: 2;
   }
 
   .nav-links {
-    position: fixed;
+    // position: fixed;
     background: #ffffff;
     height: 40vh;
     width: 100%;
@@ -202,6 +208,7 @@ nav {
   }
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
+    position: absolute;
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
