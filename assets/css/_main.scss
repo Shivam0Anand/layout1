@@ -2,8 +2,8 @@ header {
   height: 100vh;
   background: 
   /* top, transparent red, faked with gradient */ linear-gradient(
-      to bottom,
-      rgba(0, 174, 255, 0.411),
+      to bottom left,
+      rgba(0, 174, 255, 0.349),
       rgba(20, 19, 19, 0.45)
     ),
     /* bottom, image */ url(../images/header.jpg);
@@ -125,6 +125,8 @@ nav {
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
 }
+
+// animation - about
 @-webkit-keyframes AnimationName {
   0% {
     background-position: 0% 91%;
@@ -158,6 +160,29 @@ nav {
     background-position: 0% 91%;
   }
 }
+
+.about-heading {
+  margin-top: 15rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+  text-decoration: underline;
+  color: #0a0a0a;
+}
+.about-img {
+  width: 500px;
+  border-radius: 50%;
+}
+
+.about-text {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  width: 50rem;
+  font-family: "Titillium Web", sans-serif;
+}
+.contact {
+  height: 100vh;
+}
+
 // Media Query
 
 @media all and(max-width: 768px) {
